@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 describe Movie, type: :model do
+  describe 'Validations' do
+    it { should validate_inclusion_of(:rating).in_array([0,1,2,3,4,5])}
+  end
+
   describe "relationships" do
     it {should belong_to(:director)}
     it {should have_many(:actors).through(:actor_movies)}

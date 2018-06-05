@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T10:14:07-06:00">2018-06-05T10:14:07-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T10:23:50-06:00">2018-06-05T10:23:50-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.78
+         1.83
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>53</b> files in total.
-    <b>520</b> relevant lines. 
-    <span class="green"><b>520</b> lines covered</span> and
+    <b>532</b> relevant lines. 
+    <span class="green"><b>532</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -87,7 +87,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>12.8</td>
+        <td>13.3</td>
       </tr>
       
       <tr>
@@ -133,11 +133,11 @@
       <tr>
         <td class="strong"><a href="#40520c5add13f3071008880d0283edffdd91f6ef" class="src_link" title="app/controllers/movies_controller.rb">app/controllers/movies_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>28</td>
+        <td>33</td>
         <td>16</td>
         <td>16</td>
         <td>0</td>
-        <td>1.8</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -207,7 +207,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>10.4</td>
+        <td>10.8</td>
       </tr>
       
       <tr>
@@ -233,11 +233,11 @@
       <tr>
         <td class="strong"><a href="#59a10e13f5d87f86a5388dd2db4175a7a2e839e2" class="src_link" title="app/models/movie.rb">app/models/movie.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>13</td>
-        <td>9</td>
-        <td>9</td>
+        <td>23</td>
+        <td>14</td>
+        <td>14</td>
         <td>0</td>
-        <td>4.3</td>
+        <td>3.9</td>
       </tr>
       
       <tr>
@@ -503,11 +503,11 @@
       <tr>
         <td class="strong"><a href="#2ab1e60ab28b9e774e87e80297ffe7f951b7ef3d" class="src_link" title="spec/features/visitor/movie_pages_spec.rb">spec/features/visitor/movie_pages_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>36</td>
-        <td>24</td>
-        <td>24</td>
+        <td>46</td>
+        <td>29</td>
+        <td>29</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -563,11 +563,11 @@
       <tr>
         <td class="strong"><a href="#9205b11e8f3ff6cdf56d99a900b7346b27640bb3" class="src_link" title="spec/models/movie_spec.rb">spec/models/movie_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>19</td>
-        <td>12</td>
-        <td>12</td>
+        <td>23</td>
+        <td>14</td>
+        <td>14</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -925,8 +925,8 @@
           <code class="ruby">  def set_cart</code>
         </li>
       
-        <li class="covered" data-hits="54" data-linenumber="8">
-          <span class="hits">54</span>
+        <li class="covered" data-hits="56" data-linenumber="8">
+          <span class="hits">56</span>
           
           <code class="ruby">    @cart ||= Cart.new(session[:cart])</code>
         </li>
@@ -949,14 +949,14 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="12">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="42" data-linenumber="12">
+          <span class="hits">42</span>
           
           <code class="ruby">    @current_user = nil</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="13">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="42" data-linenumber="13">
+          <span class="hits">42</span>
           
           <code class="ruby">    if session[:user_id]</code>
         </li>
@@ -1566,14 +1566,14 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="19">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="19">
+          <span class="hits">5</span>
           
           <code class="ruby">    @movie = Movie.find_by(slug: params[:slug])</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="20">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="20">
+          <span class="hits">5</span>
           
           <code class="ruby">    @genres = @movie.genres</code>
         </li>
@@ -1581,46 +1581,76 @@
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    # if @movie.rating == 0</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   @rating = &#39;Not Rated&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">  private</code>
+          
+          <code class="ruby">    # else</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   @rating = &quot;#{@movie.rating} out of 5&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="25">
           
-          <code class="ruby">  def movies_params</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
           
-          <code class="ruby">    params.require(:movie).permit(:title, :description)</code>
+          <code class="ruby">    # end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def movies_params</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    params.require(:movie).permit(:title, :description)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">end</code>
@@ -2131,8 +2161,8 @@
           <code class="ruby">  def initialize(initial_contents)</code>
         </li>
       
-        <li class="covered" data-hits="57" data-linenumber="5">
-          <span class="hits">57</span>
+        <li class="covered" data-hits="59" data-linenumber="5">
+          <span class="hits">59</span>
           
           <code class="ruby">    @contents = initial_contents || Hash.new(0)</code>
         </li>
@@ -2155,8 +2185,8 @@
           <code class="ruby">  def total_item_count</code>
         </li>
       
-        <li class="covered" data-hits="43" data-linenumber="9">
-          <span class="hits">43</span>
+        <li class="covered" data-hits="45" data-linenumber="9">
+          <span class="hits">45</span>
           
           <code class="ruby">    @contents.values.sum</code>
         </li>
@@ -2353,8 +2383,8 @@
     <h3>app/models/movie.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2371,43 +2401,43 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  belongs_to :director</code>
+          <code class="ruby">  validates_inclusion_of :rating, in: [0, 1, 2, 3, 4, 5]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  has_many :actor_movies</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  has_many :actors, through: :actor_movies</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  has_many :movie_genres</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  has_many :genres, through: :movie_genres</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :director</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :actor_movies</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :actors, through: :actor_movies</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :movie_genres</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_save :generate_slug</code>
+          <code class="ruby">  has_many :genres, through: :movie_genres</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -2419,22 +2449,82 @@
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
+          <code class="ruby">  before_save :generate_slug</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
           <code class="ruby">  def generate_slug</code>
         </li>
       
-        <li class="covered" data-hits="31" data-linenumber="11">
-          <span class="hits">31</span>
+        <li class="covered" data-hits="34" data-linenumber="13">
+          <span class="hits">34</span>
           
           <code class="ruby">    self.slug = title.parameterize</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def rating_statement</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="17">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    if rating == 0</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="18">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      &#39;Not Rated&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      &quot;#{rating} out of 5&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>
@@ -6310,8 +6400,8 @@
     <h3>spec/features/visitor/movie_pages_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>24</b> relevant lines. 
-      <span class="green"><b>24</b> lines covered</span> and
+      <b>29</b> relevant lines. 
+      <span class="green"><b>29</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -6343,20 +6433,20 @@
           <code class="ruby">  before :each do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
           
           <code class="ruby">    @genre1 = Genre.create!(name: &#39;Sci-Fi&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
           <code class="ruby">    @genre2 = Genre.create!(name: &#39;Action&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
           
           <code class="ruby">    @genre3 = Genre.create!(name: &#39;Fantasy&#39;)</code>
         </li>
@@ -6367,14 +6457,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
           <code class="ruby">    @director1 = Director.create!(name: &#39;Cool Director&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
           <code class="ruby">    @director2 = Director.create!(name: &#39;The Cooler Diector&#39;)</code>
         </li>
@@ -6385,22 +6475,22 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
           <code class="ruby">    @movie1 = @director1.movies.create!(title: &#39;star&#39;, description: &#39;A great movie&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
           
           <code class="ruby">    @movie2 = @director1.movies.create!(title: &#39;Harry Potter&#39;, description: &#39;Another great movie&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
           
-          <code class="ruby">    @movie3 = @director1.movies.create!(title: &#39;Star Trek&#39;, description: &#39;The coolest movie&#39;)</code>
+          <code class="ruby">    @movie3 = @director1.movies.create!(title: &#39;Star Trek&#39;, description: &#39;The coolest movie&#39;, rating: 5)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
@@ -6409,26 +6499,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
           
           <code class="ruby">    MovieGenre.create!(movie_id: @movie1.id, genre_id: @genre1.id)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
           
           <code class="ruby">    MovieGenre.create!(movie_id: @movie1.id, genre_id: @genre2.id)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="18">
+          <span class="hits">2</span>
           
           <code class="ruby">    MovieGenre.create!(movie_id: @movie2.id, genre_id: @genre3.id)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="19">
+          <span class="hits">2</span>
           
           <code class="ruby">    MovieGenre.create!(movie_id: @movie3.id, genre_id: @genre1.id)</code>
         </li>
@@ -6520,16 +6610,76 @@
         <li class="never" data-hits="" data-linenumber="34">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &#39;they should see the rating for that movie, if it does not have a rating it should be zero&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        visit movie_path(slug: @movie1.slug)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(page).to have_content(&quot;Rated: Not Rated&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        visit movie_path(slug: @movie3.slug)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(page).to have_content(&quot;Rated: #{@movie3.rating} out of 5&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby">end</code>
@@ -7042,8 +7192,8 @@
     <h3>spec/models/movie_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -7072,94 +7222,118 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;relationships&quot; do</code>
+          <code class="ruby">  describe &#39;Validations&#39; do</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="5">
           <span class="hits">2</span>
           
+          <code class="ruby">    it { should validate_inclusion_of(:rating).in_array([0,1,2,3,4,5])}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;relationships&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
           <code class="ruby">    it {should belong_to(:director)}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
+        <li class="covered" data-hits="2" data-linenumber="10">
           <span class="hits">2</span>
           
           <code class="ruby">    it {should have_many(:actors).through(:actor_movies)}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="7">
+        <li class="covered" data-hits="2" data-linenumber="11">
           <span class="hits">2</span>
           
           <code class="ruby">    it { should have_many(:movie_genres) }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
+        <li class="covered" data-hits="2" data-linenumber="12">
           <span class="hits">2</span>
           
           <code class="ruby">    it { should have_many(:genres).through(:movie_genres) }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;instance methods&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;should generate a slug for a new movie&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
           <code class="ruby">      director = Director.create(name: &#39;foo&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">      movie = director.movies.create(title: &#39;Jurassic Park&#39;, description: &#39;blah&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(movie.slug).to eq(movie.title.parameterize)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>
