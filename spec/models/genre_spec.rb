@@ -40,5 +40,11 @@ RSpec.describe Genre do
         expect(@genre1.highest_rated_movie).to eq(@movie3.title)
       end
     end
+
+    describe 'lowest_rated_movie' do
+      it 'should return the lowest rated movie title of all movies in that specific genre' do
+        expect(@genre1.lowest_rated_movie).to eq(@movie1.title)
+      end
+    end
   end
 end

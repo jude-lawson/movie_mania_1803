@@ -60,6 +60,12 @@ RSpec.describe 'Genre Pages (Visitor)' do
 
         expect(page).to have_content("Highest Rated Movie: #{@movie3.title}")
       end
+
+      it 'should show the name an rating of the movie with the lowest rating of all movies in this genre' do
+        visit genre_path(@genre1)
+
+        expect(page).to have_content("Lowest Rated Movie: #{@movie1.title}")
+      end
     end
   end
 end
