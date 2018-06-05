@@ -20,5 +20,5 @@ Rails.application.routes.draw do
 
   resources :carts, only: [:create]
 
-  resources :genres, only: [:index, :create]
+  resources :genres, only: [:index, :create, :show]
 end

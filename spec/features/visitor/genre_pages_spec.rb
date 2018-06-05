@@ -1,0 +1,37 @@
+require 'rails_helper'
+
+RSpec.describe 'Genre Pages (Visitor)' do
+  before :each do
+    @genre1 = Genre.create!(name: 'Sci-Fi')
+    @genre2 = Genre.create!(name: 'Action')
+    @genre3 = Genre.create!(name: 'Fantasy')
+
+    @director1 = Director.create!(name: 'Cool Director')
+    @movie1 = @director1.movies.create!(title: 'Star Wars', description: 'A great movie')
+    @movie2 = @director1.movies.create!(title: 'Harry Potter', description: 'Another great movie')
+
+    MovieGenre.create!(movie_id: @movie1.id, genre_id: @genre1.id)
+    MovieGenre.create!(movie_id: @movie1.id, genre_id: @genre2.id)
+    MovieGenre.create!(movie_id: @movie2.id, genre_id: @genre3.id)
+  end
+
+  context 'Genres Index Page' do
+    describe 'A visitor visits the genres index page' do
+      it 'they cannot view the form to create a new genre' do
+        visit genres_path
+
+        expect(page).to_not have_content('Create a New Genre')
+        expect(page).to_not have_css('#new_genre')
+        expect(page).to_not have_button('Create Genre')
+      end
+
+      it 'they should see all of the genre names as links' do
+        visit genres_path
+
+        expect(page).to have_link(@genre1.name)
+        expect(page).to have_link(@genre2.name)
+        expect(page).to have_link(@genre3.name)
+      end
+    end
+  end
+end

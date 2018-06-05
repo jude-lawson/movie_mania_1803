@@ -1,7 +1,7 @@
 %h1 Genres
 
 -@genres.each do |genre|
-  %span= genre.name
+  =link_to genre.name, genre_path(genre)
 
 -if current_admin?
   %h2 Create a New Genre
