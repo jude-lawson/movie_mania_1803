@@ -7,4 +7,8 @@ class Genre < ApplicationRecord
   def average_movie_rating
     movies.average(:rating)
   end
+
+  def highest_rated_movie
+    movies.where(rating: movies.maximum(:rating)).limit(1).first.title
+  end
 end

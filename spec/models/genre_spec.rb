@@ -34,5 +34,11 @@ RSpec.describe Genre do
         expect(@genre1.average_movie_rating).to eq(4)
       end
     end
+
+    describe 'highest_rated_movie' do
+      it 'should return the highest rated movie title of all movies in that specific genre' do
+        expect(@genre1.highest_rated_movie).to eq(@movie3.title)
+      end
+    end
   end
 end

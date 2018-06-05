@@ -1,5 +1,6 @@
 %h1= @genre.name
 %h3= "Average Rating: #{@genre.average_movie_rating}"
+%h3= "Highest Rated Movie: #{@genre.highest_rated_movie}"
 
 -@genre_movies.each do |movie|
   %span= movie.title
