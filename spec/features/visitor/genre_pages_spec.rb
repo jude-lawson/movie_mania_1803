@@ -7,12 +7,16 @@ RSpec.describe 'Genre Pages (Visitor)' do
     @genre3 = Genre.create!(name: 'Fantasy')
 
     @director1 = Director.create!(name: 'Cool Director')
+    @director2 = Director.create!(name: 'The Cooler Diector')
+
     @movie1 = @director1.movies.create!(title: 'Star Wars', description: 'A great movie')
     @movie2 = @director1.movies.create!(title: 'Harry Potter', description: 'Another great movie')
+    @movie3 = @director1.movies.create!(title: 'Star Trek', description: 'The coolest movie')
 
     MovieGenre.create!(movie_id: @movie1.id, genre_id: @genre1.id)
     MovieGenre.create!(movie_id: @movie1.id, genre_id: @genre2.id)
     MovieGenre.create!(movie_id: @movie2.id, genre_id: @genre3.id)
+    MovieGenre.create!(movie_id: @movie3.id, genre_id: @genre1.id)
   end
 
   context 'Genres Index Page' do
@@ -31,6 +35,18 @@ RSpec.describe 'Genre Pages (Visitor)' do
         expect(page).to have_link(@genre1.name)
         expect(page).to have_link(@genre2.name)
         expect(page).to have_link(@genre3.name)
+      end
+    end
+  end
+
+  context 'Genre Show Page' do
+    describe 'A visitor vistis the show page for a specific genre' do
+      it 'they should see all movies for that genre' do
+        visit genre_path(@genre1)
+
+        expect(page).to have_content(@movie1.title)
+        expect(page).to have_content(@movie3.title)
+        expect(page).to_not have_content(@movie2.title)
       end
     end
   end
