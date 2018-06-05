@@ -4,6 +4,8 @@ describe Movie, type: :model do
   describe "relationships" do
     it {should belong_to(:director)}
     it {should have_many(:actors).through(:actor_movies)}
+    it { should have_many(:movie_genres) }
+    it { should have_many(:genres).through(:movie_genres) }
   end
 
   describe 'instance methods' do
