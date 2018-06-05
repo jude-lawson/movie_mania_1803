@@ -9,9 +9,9 @@ RSpec.describe 'Genre Pages (Visitor)' do
     @director1 = Director.create!(name: 'Cool Director')
     @director2 = Director.create!(name: 'The Cooler Diector')
 
-    @movie1 = @director1.movies.create!(title: 'Star Wars', description: 'A great movie')
+    @movie1 = @director1.movies.create!(title: 'Star Wars', description: 'A great movie', rating: 3)
     @movie2 = @director1.movies.create!(title: 'Harry Potter', description: 'Another great movie')
-    @movie3 = @director1.movies.create!(title: 'Star Trek', description: 'The coolest movie')
+    @movie3 = @director1.movies.create!(title: 'Star Trek', description: 'The coolest movie', rating: 5)
 
     MovieGenre.create!(movie_id: @movie1.id, genre_id: @genre1.id)
     MovieGenre.create!(movie_id: @movie1.id, genre_id: @genre2.id)
@@ -47,6 +47,12 @@ RSpec.describe 'Genre Pages (Visitor)' do
         expect(page).to have_content(@movie1.title)
         expect(page).to have_content(@movie3.title)
         expect(page).to_not have_content(@movie2.title)
+      end
+
+      it 'they should see the average rating for all movies in the genre' do
+        visit genre_path(@genre1)
+
+        expect(page).to have_content("Average Rating: 4")
       end
     end
   end

@@ -1,4 +1,6 @@
 %h1= @genre.name
+%h3= "Average Rating: #{@genre.average_movie_rating}"
 
 -@genre_movies.each do |movie|
   %span= movie.title
+
