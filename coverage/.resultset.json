@@ -197,6 +197,7 @@
         null,
         1,
         1,
+        1,
         null,
         null,
         1,
@@ -957,7 +958,7 @@
         null,
         null,
         1,
-        8,
+        9,
         null,
         null
       ],
@@ -974,7 +975,7 @@
         1,
         null,
         1,
-        2,
+        3,
         null,
         null
       ],
@@ -991,14 +992,30 @@
         6,
         null,
         null,
-        1,
-        1,
-        1,
+        null,
+        null,
+        null,
         null,
         null,
         1,
         4,
         4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/jude/turing/2module/final/movie_mania_1803/app/controllers/admin/genres_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
         null,
         null,
         1,
@@ -1156,6 +1173,6 @@
         null
       ]
     },
-    "timestamp": 1528217454
+    "timestamp": 1528298065
   }
 }

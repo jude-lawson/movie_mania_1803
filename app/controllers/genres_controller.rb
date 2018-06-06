@@ -4,19 +4,19 @@ class GenresController < ApplicationController
     @new_genre = Genre.new
   end
 
-  def create
-    Genre.create!(genre_params)
-    redirect_to genres_path
-  end
+  # def create
+  #   Genre.create!(genre_params)
+  #   redirect_to genres_path
+  # end
 
   def show
     @genre = Genre.find(params[:id])
     @genre_movies = @genre.movies
   end
 
-  private
+  # private
 
-  def genre_params
-    params.require(:genre).permit(:name)
-  end
+  # def genre_params
+  #   params.require(:genre).permit(:name)
+  # end
 end

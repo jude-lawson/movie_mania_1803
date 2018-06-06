@@ -5,7 +5,7 @@
 
 -if current_admin?
   %h2 Create a New Genre
-  =form_for [@new_genre] do |f|
+  =form_for [:admin, @new_genre] do |f|
     =f.label :name
     =f.text_field :name
 
